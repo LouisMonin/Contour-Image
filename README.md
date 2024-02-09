@@ -1,8 +1,6 @@
 # ContourImage
 Programme permettant de trouver les contours des objets présents sur un image de manière automatique.
 
-# -*- coding: utf-8 -*-
-
 import numpy as np
 import cv2
 from matplotlib import pyplot as plt
@@ -31,6 +29,7 @@ plt.ylabel("Nombre de Pixels")
 plt.show()
 
 # Matrices Sobel
+
 sobel_x = np.array([[-1, 0, 1], [-2, 0, 2], [-1, 0, 1]])  # Masque pour gx
 sobel_y = np.array([[-1, -2, -1], [0, 0, 0], [1, 2, 1]])  # Masque pour gy
 plt.figure(figsize=(12, 4)) #les afficher
@@ -60,6 +59,7 @@ plt.colorbar()
 plt.show()
 
 # Sobel caméra
+
 import cv2
 import numpy as np
 
@@ -93,6 +93,7 @@ def processWebcam():
     cv2.destroyAllWindows()
 
 # Lancer le traitement en irl
+
 processWebcam()
 
 #Sobel Segmentation
